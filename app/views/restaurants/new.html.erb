@@ -1,8 +1,10 @@
+<p>Hello</p>
+
 <%= simple_form_for @restaurant do |form| %>
     <%= form.input :name %>
     <%= form.input :address %>
     <%= form.input :phone_number %>
-    <%= form.input :category %>
+    <%= form.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"]%>
     <%= form.submit "Add a Restaurant" %>
-<%= end %>
+<% end %>
 
